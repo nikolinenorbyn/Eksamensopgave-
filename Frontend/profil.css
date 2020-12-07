@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(255, 241, 113, 0.205);
+}
+
+.topbar {
+height: 5rem;
+background-color: rgba(225, 103, 250, 0.466);
+
+}
+
+.header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.user {
+    justify-content: right;
+    text-align: right;
+    padding-right: 0.5rem;
+    
+}
+
+.container {
+    justify-content: center;
+    text-align: left;
+    padding: 3rem;
+}
+
+.container2 {
+    justify-content: center;
+    text-align: right;
+    padding: 3rem;
+}
+
+.header2 {
+    padding-bottom: 2rem;
+}
+
+.profile-btn {
+    background-color: #3a0d4d6c; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20%;
+  }
