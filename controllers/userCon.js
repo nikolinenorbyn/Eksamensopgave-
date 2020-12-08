@@ -45,3 +45,4 @@ export const updateUser = (req, res) => {
     res.send(`Bruger med id'et ${id} er blevet opdateret`);
 
 }
+

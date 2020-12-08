@@ -13,16 +13,19 @@
     <form onsubmit="signUp(event);" id="form">
 
         <!-- NAVN & FØDSELSDAG -->
-        <label for="name">First and lastname</label>
-        <input class="text" id="name" type="text" placeholder=" Firstname">
+        <label for="name">Name</label>
+        <input class="name" id="name" type="text" placeholder=" Firstname">
+
+        <br> <br>
+
         <label for="birthday">Birthday</label>
-        <input class="text" id="birthday" type="date" name="birthday">
-        <br>
+        <input class="birthday" id="birthday" type="date" name="birthday">
+        <br> <br>
 
 
         <!-- VALG AF KØN -->
         <label>Select your gender:</label> <br> <br>
-    <select name="gender" id="gender" required>
+    <select name="gender" id="gender" class="gender" required>
         <option value="blank">  </option>
         <option value="female">Female</option>
         <option value="male">Male</option>
@@ -32,6 +35,7 @@
         <hr>
 
         <!-- INTERESSER -->
+    <div class="interest">
         <p>Select your interests:</p>
         <input type="radio" name="gender" value="Female" id="interest">
         <label for="female">Female</label>
@@ -44,10 +48,12 @@
         
         <input type="radio" name="gender" value="All" id="interest">
         <label for="female">All</label>
-    
+    </div>
+
+
     <!-- EMAIL & PASSWORD  -->
-        <input id="email" type="email" class="input-box" placeholder="  Your email" >
-        <input id="password" type="password" class="input-box" placeholder="  Your password" >
+        <input id="email" type="email" class="email" placeholder="  Your email" >
+        <input id="password" type="password" class="password" placeholder="  Your password" >
         <p> <span> <input type="checkbox"> </span> I agree to the Terms of services</p>
         <button value="Submit"  type="submit" class="signup-btn" onClick="store()" >Sign up</button>
     </form>

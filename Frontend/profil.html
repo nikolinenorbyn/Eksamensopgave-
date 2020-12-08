@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
-    <link rel="stylesheet" href="profil.css">
 </head>
 <body>
    
@@ -18,59 +17,21 @@
         </form>
     </div>
 
-    <!-- OPDATER INFORMATIONER -->
+<!-- LISTE OVER MATCHES, SKAL INDEHOLDE EN KNAP SOM KAN SLETTE MATCH -->
 
-    <div class="container">
-        <div class="header2">
-            <h3>Opdater din profil</h3>
-        </div>
-        <hr> <br>
-
-        <form class="form" id="update-profile">
-            <label for="">Navn: </label> <br>
-                <input type="text" name="name" id="newName" placeholder="Indtast nyt navn">
-        
-                <br><br><br>
-
-            <label for="">Email: </label> <br>
-                <input type="email" name="email" id="newEmail" placeholder="Indtast ny email">
-        
-                <br><br><br>
-
-            <label for="">Password:</label>
-            <br>
-                <input type="password" name="password" id="newPassword" placeholder="Indtast nyt password">
-       
-                <br><br><br>
-
-            <label for="">Køn: </label> <br>
-                <select name="gender" id="newGender" required>
-                    <option value="blank">  </option>
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <br><br><br>
-
-            <label for="">Interesse:</label> <br>
-                <input type="radio" name="gender" value="Female" id="newInterest">
-                <label for="female">Female</label>
-        
-                <input type="radio" name="gender" value="Male" id="newInterest">
-                <label for="female">Male</label>
-        
-                <input type="radio" name="gender" value="Other" id="newInterest">
-                <label for="female">Other</label>
-        
-                <input type="radio" name="gender" value="All" id="newInterest">
-                <label for="female">All</label>
-
-                <br><br>
-    
-                <button id="update-btn" onclick=updateUser() type="button" class="profile-btn" >Opdater profil</button>
-
+    <div class="matchlist">
+        <form >
+            <h5>Dine matches</h5>
+            
         </form>
+
+<!-- VIS POTENTIELLE MATCHES  -->
+        <form>
+            <h3>Vis protentielle matches</h3>
+            <button onclick="document.location='../frontend/ptmatch.html'">click her</button>
+        </form>
+        
+    </div>
 
     </div>
 
