@@ -24,7 +24,7 @@
 
 
         <!-- VALG AF KØN -->
-        <label>Select your gender:</label> <br> <br>
+        <label>Select your gender:</label> 
     <select name="gender" id="gender" class="gender" required>
         <option value="blank">  </option>
         <option value="female">Female</option>
@@ -35,27 +35,25 @@
         <hr>
 
         <!-- INTERESSER -->
-    <div class="interest">
-        <p>Select your interests:</p>
-        <input type="radio" name="gender" value="Female" id="interest">
-        <label for="female">Female</label>
-        
-        <input type="radio" name="gender" value="Male" id="interest">
-        <label for="female">Male</label>
-        
-        <input type="radio" name="gender" value="Other" id="interest">
-        <label for="female">Other</label>
-        
-        <input type="radio" name="gender" value="All" id="interest">
-        <label for="female">All</label>
-    </div>
 
+    <label>Vælg interesse</label>
+
+    <select id="interest" required>
+            <option value=""> </option>
+            <option value="volvo">Mænd</option>
+            <option value="saab">Kvinder</option>
+            <option value="mercedes">Andre</option>
+            <option value="audi">Alle</option>
+    </select>
+
+    <br> <br>
 
     <!-- EMAIL & PASSWORD  -->
         <input id="email" type="email" class="email" placeholder="  Your email" >
+        <br> <br>
         <input id="password" type="password" class="password" placeholder="  Your password" >
         <p> <span> <input type="checkbox"> </span> I agree to the Terms of services</p>
-        <button value="Submit"  type="submit" class="signup-btn" onClick="store()" >Sign up</button>
+        <button value="Submit"  type="submit" class="regbtn" onClick="store()" >Sign up</button>
     </form>
     
     <form id="loginForm" ></form>
@@ -68,7 +66,7 @@
 </div>
 
 
-<script src="/Frontend/register.js"></script>
+<script src="../Frontend/register.js"></script>
       
 </body>
 </html>
