@@ -8,59 +8,44 @@
 <body>
    
     <!-- LOGUD ELLER SLET PROFIL -->
-
-    <div class="topbar">
-            <h3 class="header">Bruger</h3>
-        <form id="user" class="user">
-            <button id="logout" onsubmit="logout()" value="Submit" type="submit" class="profile-btn">Log ud</button>
-            <button id="deleteuser" onsubmit="deleteUser()" value="Submit" type="submit" class="profile-btn">Slet bruger</button>
-            <button id="update" onsubmit="updateUser()" value="Submit" type="submit" class="profile-btn">Opdater bruger</button>
-        </form>
-    </div>
-
+<div>
+    <h3>Bruger</h3>
+    <form id="user">
+        <button id="logout" onsubmit="logout()" value="Submit" type="submit" class="profile-btn">Log ud</button>
+        <button id="deleteuser" onsubmit="deleteUser()" value="Submit" type="submit" class="profile-btn">Slet bruger</button>
+        <button onclick="window.location.href='opdater.html'" value="Submit" type="submit" class="profile-btn" >Opdater profil</button>
+    </form>
 
 <!-- VIS POTENTIELLE MATCHES  -->
-        <form>
-            <h3>Vis protentielle matches</h3>
-            <button onclick="window.location.href='ptmatch.html'">click her</button>
-        </form>
+     <form>
+        <h3>Vis protentielle matches</h3>
+        <button onclick="window.location.href='ptmatch.html'">click her</button>
+    </form>
         
-    </div>
 
-    </div>
-
-    <div class ="container2">
-        <h2>Brugere</h2>
-        <img src="" alt="">
-
-        <div class="voting">
-            <button id="regButton" onsubmit="like()" type="submit">Like
-                <input type="number" id="input1" value="0">
-            </button>
+    <h2>Brugere</h2>
+        <button id="regButton" onsubmit="like()" type="submit">Like
+            <input type="number" id="input1" value="0">
+        </button>
             
-            
-            <button id="regButton" onsubmit="dislike()" type="submit">Dislike
-                <input type="number" id="input2" value="0">
-            </button>
+        <button id="regButton" onsubmit="dislike()" type="submit">Dislike
+            <input type="number" id="input2" value="0">
+        </button>
                 
-        </div>
-      
-    </div>
-
-    <div>
-        <form id="matches">
-                <h3>Alle dine matches</h3>
-                <ul>
-                    <li>1 match</li> <li>2 match</li> <li>3 match</li>
-                </ul>
-                <input id="removeMatch" type="submit" onsubmit="removeMatch()" value="Slet match"> 
-          </form>
+    
+    <form id="matches">
+        <h3>Alle dine matches</h3>
+            <ul>
+                <li>1 match</li> <li>2 match</li><li>3 match</li>
+            </ul>
+        <input id="removeMatch" type="submit" onsubmit="removeMatch()" value="Slet match"> 
+    </form>
 
     </div>
 
 
    
-<script src="../routes/users.js"></script>
+<script src="../Frontend/profil.js"></script>
     
 </body>
 </html>
