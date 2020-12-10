@@ -26,26 +26,19 @@ function updateUser() {
 
 function like() {
     let likebtn = document.getElementById('like-btn');
-
     let input1 = document.getElementById('input1');
-    
-    likebtn.addEventListener('click', () => {
-        input1.value = parseInt(input1.value) +1;
-    })
+    (likebtn.clicked == input1.value +1)
+ }
     // lav if statement sådan da man kommer videre til en anden bruger hvis man har enten liket eller disliket 
-}
 
 //3. DISLIKE FUNCTION 
 
 function dislike() {
     let dislikebtn = document.getElementById('dislike-btn');
-
     let input2 = document.getElementById('input2');
-
-    dislikebtn.addEventListener('click', () => {
-        input2.value = parseInt(input2.value) +1;
-    })
-}
+    (dislikebtn.clicked == input2.value +1)
+ }
+    
 
 function match() {
     if (document.getElementById('input2', 'input1').value == +1) {

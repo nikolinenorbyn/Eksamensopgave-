@@ -12,9 +12,9 @@
     <div class="topbar">
             <h3 class="header">Bruger</h3>
         <form id="user" class="user">
-            <button id="logout" onClick="logout()" value="Submit" type="submit" class="profile-btn">Log ud</button>
-            <button id="deleteuser" onClick="deleteUser()" value="Submit" type="submit" class="profile-btn">Slet bruger</button>
-            <button id="update" onClick="updateUser()" value="Submit" type="submit" class="profile-btn">Opdater bruger</button>
+            <button id="logout" onsubmit="logout()" value="Submit" type="submit" class="profile-btn">Log ud</button>
+            <button id="deleteuser" onsubmit="deleteUser()" value="Submit" type="submit" class="profile-btn">Slet bruger</button>
+            <button id="update" onsubmit="updateUser()" value="Submit" type="submit" class="profile-btn">Opdater bruger</button>
         </form>
     </div>
 
@@ -34,14 +34,28 @@
         <img src="" alt="">
 
         <div class="voting">
-            <button id="regButton" onClick="like()" type="button">Like</button>
+            <button id="regButton" onsubmit="like()" type="submit">Like
                 <input type="number" id="input1" value="0">
+            </button>
             
             
-            <button id="regButton" onClick="dislike()" type="button">Dislike</button>
+            <button id="regButton" onsubmit="dislike()" type="submit">Dislike
                 <input type="number" id="input2" value="0">
+            </button>
+                
         </div>
       
+    </div>
+
+    <div>
+        <form id="matches">
+                <h3>Alle dine matches</h3>
+                <ul>
+                    <li>1 match</li> <li>2 match</li> <li>3 match</li>
+                </ul>
+                <input id="removeMatch" type="submit" onsubmit="removeMatch()" value="Slet match"> 
+          </form>
+
     </div>
 
 
