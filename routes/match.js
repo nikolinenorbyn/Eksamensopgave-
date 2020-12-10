@@ -1,5 +1,5 @@
 import exporess from 'express';
-import { } from '../controllers/matchCon.js';
+import {deleteMatch } from '../controllers/matchCon.js';
 
 
 const router = exporess.Router();
@@ -13,7 +13,7 @@ router.post('/', createUser) //vi har en function i users.js controller filen so
 router.get('/:id', getUser);
 
 // delete request
-router.delete('/:id', deleteUser);
+router.delete('/:id', deleteMatch);
 
 //patch request for at kunne ændre brugers information
 router.patch('/:id', updateUser)

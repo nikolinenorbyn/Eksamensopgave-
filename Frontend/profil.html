@@ -12,9 +12,9 @@
     <div class="topbar">
             <h3 class="header">Bruger</h3>
         <form id="user" class="user">
-            <button id="logout" onclick="logout()" class="profile-btn">Log ud</button>
-            <button id="deleteuser" onclick="deleteUser()" class="profile-btn">Slet bruger</button>
-            <button id="update" onclick="location.href='../Frontend/opdater.html'" class="profile-btn">Opdater bruger</button>
+            <button id="logout" onClick="logout()" value="Submit" type="submit" class="profile-btn">Log ud</button>
+            <button id="deleteuser" onClick="deleteUser()" value="Submit" type="submit" class="profile-btn">Slet bruger</button>
+            <button id="update" onClick="updateUser()" value="Submit" type="submit" class="profile-btn">Opdater bruger</button>
         </form>
     </div>
 
@@ -22,7 +22,7 @@
 <!-- VIS POTENTIELLE MATCHES  -->
         <form>
             <h3>Vis protentielle matches</h3>
-            <button onclick="document.location='../frontend/ptmatch.html'">click her</button>
+            <button onclick="window.location.href='ptmatch.html'">click her</button>
         </form>
         
     </div>
@@ -34,11 +34,11 @@
         <img src="" alt="">
 
         <div class="voting">
-            <button id="regButton" onclick=Like() type="button">Like</button>
+            <button id="regButton" onClick="like()" type="button">Like</button>
                 <input type="number" id="input1" value="0">
             
             
-            <button id="regButton" onclick=Dislike() type="button">Dislike</button>
+            <button id="regButton" onClick="dislike()" type="button">Dislike</button>
                 <input type="number" id="input2" value="0">
         </div>
       
@@ -46,7 +46,7 @@
 
 
    
-<script src="/Frontend/profil.js"></script>
+<script src="../routes/users.js"></script>
     
 </body>
 </html>

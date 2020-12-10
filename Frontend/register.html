@@ -9,27 +9,32 @@
 <body>
 
 <div class="sign-up-form">
-    <h1>Sign up now!</h1>
+    <h1>Opret en profil!</h1>
     <form onsubmit="signUp(event);" id="form">
 
         <!-- NAVN & FØDSELSDAG -->
         <label for="name">Name</label>
-        <input class="name" id="name" type="text" placeholder=" Firstname">
+        <input class="name" id="name" type="text" placeholder=" Fulde navn">
 
         <br> <br>
 
-        <label for="birthday">Birthday</label>
+        <label for="name">Brugernavn</label>
+        <input class="username" id="username" type="text" placeholder="Brugernavn">
+
+        <br> <br>
+
+        <label for="birthday">Fødselsdato</label>
         <input class="birthday" id="birthday" type="date" name="birthday">
         <br> <br>
 
 
         <!-- VALG AF KØN -->
-        <label>Select your gender:</label> 
+        <label>Vælg dit køn:</label> 
     <select name="gender" id="gender" class="gender" required>
         <option value="blank">  </option>
-        <option value="female">Female</option>
-        <option value="male">Male</option>
-        <option value="other">Other</option>
+        <option value="female">Kvinde</option>
+        <option value="male">Mand</option>
+        <option value="other">Andre</option>
     </select>
         
         <hr>
@@ -49,19 +54,19 @@
     <br> <br>
 
     <!-- EMAIL & PASSWORD  -->
-        <input id="email" type="email" class="email" placeholder="  Your email" >
+        <input id="email" type="email" class="email" placeholder="Din email" >
         <br> <br>
-        <input id="password" type="password" class="password" placeholder="  Your password" >
-        <p> <span> <input type="checkbox"> </span> I agree to the Terms of services</p>
-        <button value="Submit"  type="submit" class="regbtn" onClick="store()" >Sign up</button>
+        <input id="password" type="password" class="password" placeholder="Dit password" >
+        <br> <br>
+        <button value="Submit"  type="submit" class="regbtn" onClick="store()" >Opret profil</button>
     </form>
     
     <form id="loginForm" ></form>
         <!-- ALLEREDE BRUGER -->
         <hr>
-        <p class="or"> OR </p>
-        <p>Do you have an account?</p>
-        <button onclick="window.location.href='login.html'" value="Submit" type="submit" class="login-btn" >I already have an account</button>
+        <p class="or"> ELLER </p>
+        <p>Har du allerde en profil?</p>
+        <button onclick="window.location.href='login.html'" value="Submit" type="submit" class="login-btn" >Jeg har allerede en profil</button>
     </form>
 </div>
 

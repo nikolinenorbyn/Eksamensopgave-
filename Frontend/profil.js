@@ -1,31 +1,33 @@
 // Delete user function
 function deleteUser() {
-    deleteuser = localStorage.getItem('deleteUser')
-    alert ("Bruger er slettet")
-    location.href = "./register.html"
+    if(document.getElementById('deleteuser').clicked == true) {
+        window.location.href = "register.html"
+        alert ("Din bruger er blevet slettet")
+    }
 }
 
 
 //Logud function
 function logout() {
-    window.localStorage.clear();
-    location.href = "./login.html"
-    alert ("Du er nu logget ud")
+    if(document.getElementById('logout').clicked == true) {
+        window.location.href = "../Frontend/login.html"
+        alert ("Du er nu logget ud")
+    }
 }
 
 //1. UPDATE USER FUNCTION
 function updateUser() {
-    document.getElementById("update-btn").onclick = updateUser(); {
-        window.location = "profil.html"
+    document.getElementById("update").onclick = updateUser(); {
+        window.location = "../Frontend/opdater.html"
     }    
 }
 
 //2. LIKE FUNCTION 
 
 function like() {
-    let likebtn = document.querySelector('#like-btn');
+    let likebtn = document.getElementById('like-btn');
 
-    let input1 = document.querySelector('#input1');
+    let input1 = document.getElementById('input1');
     
     likebtn.addEventListener('click', () => {
         input1.value = parseInt(input1.value) +1;
@@ -36,16 +38,16 @@ function like() {
 //3. DISLIKE FUNCTION 
 
 function dislike() {
-    let dislikebtn = document.querySelector('#dislike-btn');
+    let dislikebtn = document.getElementById('dislike-btn');
 
-    let input2 = document.querySelector('#input2');
+    let input2 = document.getElementById('input2');
 
     dislikebtn.addEventListener('click', () => {
-        input2.value = parseInt(input2.value) 1;
+        input2.value = parseInt(input2.value) +1;
     })
 }
 
-function next() {
+function match() {
     if (document.getElementById('input2', 'input1').value == +1) {
         localStorage.getItem("#disLike", "#like"); 
     } else {

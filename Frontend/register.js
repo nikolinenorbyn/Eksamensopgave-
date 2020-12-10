@@ -1,14 +1,12 @@
-    var name = document.getElementById('name');
-    var password = document.getElementById('password')
-    var birthday = document.getElementById("birthday");
-    var email = document.getElementById("email");
-    var interest = document.getElementById("interest");
-    var gender = document.getElementById("gender");
 
 
-//jeg opstiller en variable for hver form, og giver dem et navn jeg kan kalde
 function store() {
-//opsætter kriterer for informationerne og hvordan de skal udfyldes 
+    //jeg opstiller en variable for hver form, og giver dem et navn jeg kan kalde
+    //opsætter kriterer for informationerne og hvordan de skal udfyldes 
+    var username = document.getElementById("username");
+    if(username.value.length == " ") {
+        alert ('Udfyld venligst et brugernavn')
+    }  
     var name = document.getElementById("name");
     if(name.value.length == " ") {
         alert ('Udfyld venligst fornavn og efternavn')
@@ -25,16 +23,15 @@ function store() {
     if(email.value.length == " "){
         alert ('Udfyld venligst email')
     
-    {
+    }else{
         localStorage.setItem('name', name.value);
         localStorage.setItem('email', email.value);
         localStorage.setItem('password', password.value);
         localStorage.setItem('gender', gender.value);
         localStorage.setItem('interest', interest.value);
-            alert('Your account has been created')
-            document.getElementById("regbtn").onclick = store(); {
-                location.href = "../Frontend/profil.html";
+            document.getElementById("regbtn").onclick = store() 
+                window.location.href = "../Frontend/profil.html";
             }
         }
-    }
-}
+    
+
